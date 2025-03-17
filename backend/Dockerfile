@@ -11,7 +11,7 @@ COPY ./backend /app
 RUN ./mvnw clean install
 
 # Exponha a porta 8080, que é a padrão para o Spring Boot
-EXPOSE 8080
+EXPOSE 8081
 
 # Comando para rodar a aplicação Spring Boot
 CMD ["./mvnw", "spring-boot:run"]
